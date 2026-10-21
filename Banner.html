@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spider-Verse Wiki - Panel Principal</title>
+    <link rel="stylesheet" href="Spider-Estilos.css" />
+    <link rel="icon" href="Araña logo.avif" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="wiki-container">
+      <h2>Spider-Verse: Cómics Principales</h2>
+
+      <div class="comic-banner">
+        <div class="banner-slider">
+          <div class="slider-track">
+            <img src="Spider-Verse-fondo.jpg" alt="Banner Spider-Verse 1" />
+            <img src="Spider-Verse-fondo2.jpeg" alt="Banner Spider-Verse 2" />
+            <img src="Spider-Verse-fondo3.jpeg" alt="Banner Spider-Verse 3" />
+            <img src="Spider-Verse-fondo4.jpg" alt="Banner Spider-Verse 4" />
+          </div>
+        </div>
+
+        <div class="comic-info">
+          <!-- Botón 1: Escritor -->
+          <button
+            class="btn"
+            onclick="document.getElementById('modal-escritor').showModal()"
+          >
+            Escritor
+          </button>
+          <dialog id="modal-escritor">
+            <h3>Escritor</h3>
+            <p>
+              Dan Slott es un guionista estadounidense aclamado por su extensa
+              etapa en <em>The Amazing Spider-Man</em> y por ser el creador
+              principal del evento <strong>Spider-Verse</strong> en 2014.
+            </p>
+            <button
+              class="btn-close"
+              onclick="document.getElementById('modal-escritor').close()"
+            >
+              Cerrar
+            </button>
+          </dialog>
+
+          <!-- Botón 2: Ilustrador -->
+          <button
+            class="btn"
+            onclick="document.getElementById('modal-ilustrador').showModal()"
+          >
+            Ilustrador
+          </button>
+          <dialog id="modal-ilustrador">
+            <h3>Ilustradores</h3>
+            <p>
+              Olivier Coipel (francés) y Giuseppe Camuncoli (italiano) son los
+              artistas principales encargados del arte épico y el diseño visual
+              de las distintas arañas del multiverso.
+            </p>
+            <button
+              class="btn-close"
+              onclick="document.getElementById('modal-ilustrador').close()"
+            >
+              Cerrar
+            </button>
+          </dialog>
+
+          <!-- Botón 3: Publicación -->
+          <button
+            class="btn"
+            onclick="document.getElementById('modal-publicacion').showModal()"
+          >
+            Publicación
+          </button>
+          <dialog id="modal-publicacion">
+            <h3>Fechas de Publicación</h3>
+            <p>
+              El evento principal se publicó entre
+              <strong>noviembre de 2014 y febrero de 2015</strong> en Marvel
+              Comics, extendiéndose luego en múltiples secuelas y spin-offs
+              (Spider-Geddon, End of the Spider-Verse).
+            </p>
+            <button
+              class="btn-close"
+              onclick="document.getElementById('modal-publicacion').close()"
+            >
+              Cerrar
+            </button>
+          </dialog>
+
+          <!-- Botón 4: Sinopsis -->
+          <button
+            class="btn"
+            onclick="document.getElementById('modal-sinopsis').showModal()"
+          >
+            Sinopsis
+          </button>
+          <dialog id="modal-sinopsis">
+            <h3>Sinopsis</h3>
+            <p>
+              Los Herederos, una familia de vampiros multiversales liderada por
+              Morlun, comienzan a cazar a todas las versiones de Spider-Man a
+              través del multiverso para absorber su energía vital. Ante la
+              amenaza de extinción total, los Spider-Heroes de todas las
+              dimensiones deben unirse para sobrevivir y contraatacar.
+            </p>
+            <button
+              class="btn-close"
+              onclick="document.getElementById('modal-sinopsis').close()"
+            >
+              Cerrar
+            </button>
+          </dialog>
+        </div>
+      </div>
+
+      <a href="Seleccion.html" class="btn"
+        >Presiona y elige qué historia del multiverso quieras conocer</a
+      >
+    </div>
+
+    <footer>
+      <p>Copyright © 2026 JULIAN AVALOS. Todos los derechos reservados.</p>
+    </footer>
+    
+  </body>
+</html>
